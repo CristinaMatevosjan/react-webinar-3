@@ -44,7 +44,7 @@ class Store {
   addItem=()=> {
     this.setState({
       ...this.state,
-      list: [...this.state.list, {code: String(new Date().getTime()).slice(8).split(','), title: 'Новая запись'}]
+      list: [...this.state.list, {code: String(new Date().getTime()).slice(8).split(','), title: 'Новая запись', counter: '0'}]
       
     })
   };
